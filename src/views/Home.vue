@@ -171,7 +171,7 @@ export default {
 }
 .search-button {
   position: fixed;
-  margin-top: 120px;
+  top: 45%;
 }
 .search-button button:hover {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -220,7 +220,6 @@ export default {
   height: auto;
   overflow: hidden;
   box-shadow: 0 4px 6px 0 rgba(32, 33, 36, 0.28);
-  top: 29%;
   z-index: 2;
   background: white;
   border: 0px;
