@@ -236,4 +236,40 @@ export default {
   justify-content: center;
   margin-bottom: 20px;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .input-cont {
+    width: 90%;
+  }
+  .new {
+    width: 90%;
+  }
+  .content {
+    display: flex !important;
+  }
+  .content-cont {
+    margin-left: 30px !important;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 63px;
+    padding-bottom: 15px;
+  }
+  .content-cont:after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: #1a73e8;
+    bottom: 0;
+    left: -10px;
+  }
+  .main-body {
+    margin-left: 30px !important;
+  }
+  .w-55 {
+    width: 90% !important;
+  }
+}
 </style>

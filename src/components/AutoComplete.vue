@@ -1,6 +1,6 @@
 <template>
   <main ref="auto">
-    <div v-for="item in searched.slice(0,10)" :key="item.id">
+    <div v-for="item in searched.slice(0,8)" :key="item.id">
       <img class="icon" src="@/assets/search.svg" alt />
       <div @click="navigate(item)" class="auto-space">{{ item.name}}</div>
     </div>

@@ -7,10 +7,10 @@
       <img @click="$router.go(-1)" class="back" src="@/assets/back-arrow.svg" alt />
     </div>
     <div class="content">
-      <span class="content-cont">
+      <div class="content-cont">
         <img class="color-icon" src="@/assets/color-logo.svg" alt />
         <router-link style="padding-left:5px" to="/view">All</router-link>
-      </span>
+      </div>
     </div>
     <div v-if="$route.params.data && $route.params.clicked" class="main-body">
       <div>
@@ -18,7 +18,7 @@
         <div>
           <h3 style="color:#1a0dab;font-size:20px;margin-bottom:0px">{{$route.params.data.name}}</h3>
           <div style="padding-top:5px; color:#006621">{{$route.params.data.picture}}</div>
-          <div style="width:55%">{{$route.params.data.about}}</div>
+          <div class="w-55">{{$route.params.data.about}}</div>
         </div>
       </div>
     </div>
@@ -39,7 +39,7 @@
           <div>
             <h3 style="color:#1a0dab;font-size:20px;margin-bottom:0px">{{item.name}}</h3>
             <div style="padding-top:5px; color:#006621">{{item.picture}}</div>
-            <div style="width:55%">{{item.about}}</div>
+            <div class="w-55">{{item.about}}</div>
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .header {
   height: 10vh;
   width: 50%;
@@ -117,5 +117,8 @@ export default {
 .main-body b {
   color: black;
   font-size: 15px;
+}
+.w-55 {
+  width: 55%;
 }
 </style>
